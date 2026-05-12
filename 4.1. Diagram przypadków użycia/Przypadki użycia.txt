@@ -1,0 +1,28 @@
+PRZYPADKI UŻYCIA
+a) Dla pracownika biura
+1. Przyjmij zamówienie
+2. Edytuj zamówienie
+3. Anuluj zamówienie
+4. Wygeneruj dokument WZ
+5. Sprawdź status zamówienia
+
+b) Dla magazyniera
+6. Wyświetl listę zamówień
+7. Potwierdź skompletowanie zamówienia
+8. Zgłoś brak towaru
+9. Zarejestruj przyjęcie towaru
+10. Zaktualizuj stan magazynowy
+11. Zarejestruj zwrot pustych butelek
+12. Zarejestruj posortowanie butelek
+13. Zarejestruj utylizacje butelek bezzwrotnych
+14. Oznacz zamówienie jako "Gotowe do wysyłki"
+
+c) Dla kierowcy
+15. Potwierdź załadunek pojazdu
+16. Potwierdź dostawę
+17. Potwierdź odbiór pustych butelek
+
+d) Dla kierownika
+18. Wygeneruj raport dzienny
+19. Przeglądaj statystyki dostaw
+20. Zarządzaj użytkownikami systemu
