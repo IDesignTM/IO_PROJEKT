@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <help_text/>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLSequenceAllInOne</id>
+    <coordinates>
+      <x>10</x>
+      <y>30</y>
+      <w>1010</w>
+      <h>680</h>
+    </coordinates>
+    <panel_attributes>title=Diagram interakcji - Zarejestruj utylizację butelek bezzwrotnych - Igor Nalewajko
+obj=Magazynier~a ACTOR EXECUTION
+obj=:FormularzUtylizacji~b
+obj=:KontrolerUtylizacji~c
+obj=:Utylizacja~d
+
+a-&gt;b: wybierzOpcjeUtylizacja()
+b-&gt;c: pobierzOpakowania()
+c.&gt;b: listaOpakowan
+a-&gt;b: wprowadzDane(nazwa, ilosc)
+a-&gt;b: kliknijZatwierdzUtylizacje()
+b-&gt;c: walidujDane(nazwa, ilosc)
+
+c.&gt;b: wyswietlKomunikat("Błąd: Wprowadzono niepoprawne dane")
+
+c-&gt;d: zatwierdzUtylizacje(nazwa, ilosc)
+d.&gt;c: potwierdzenieZapisu
+c.&gt;b: wyswietlKomunikat("Sukces")
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>240</x>
+      <y>510</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>[poprawne dane]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>240</x>
+      <y>440</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>[błędne dane]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>240</x>
+      <y>410</y>
+      <w>660</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>alt
+--
+
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
