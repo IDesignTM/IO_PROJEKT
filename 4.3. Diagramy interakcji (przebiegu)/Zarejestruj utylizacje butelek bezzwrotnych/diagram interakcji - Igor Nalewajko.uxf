@@ -1,43 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
   <help_text/>
-  <zoom_level>10</zoom_level>
-  <element>
-    <id>UMLSequenceAllInOne</id>
-    <coordinates>
-      <x>10</x>
-      <y>30</y>
-      <w>1010</w>
-      <h>680</h>
-    </coordinates>
-    <panel_attributes>title=Diagram interakcji - Zarejestruj utylizację butelek bezzwrotnych - Igor Nalewajko
-obj=Magazynier~a ACTOR EXECUTION
-obj=:FormularzUtylizacji~b
-obj=:KontrolerUtylizacji~c
-obj=:Utylizacja~d
-
-a-&gt;b: wybierzOpcjeUtylizacja()
-b-&gt;c: pobierzOpakowania()
-c.&gt;b: listaOpakowan
-a-&gt;b: wprowadzDane(nazwa, ilosc)
-a-&gt;b: kliknijZatwierdzUtylizacje()
-b-&gt;c: walidujDane(nazwa, ilosc)
-
-c.&gt;b: wyswietlKomunikat("Błąd: Wprowadzono niepoprawne dane")
-
-c-&gt;d: zatwierdzUtylizacje(nazwa, ilosc)
-d.&gt;c: potwierdzenieZapisu
-c.&gt;b: wyswietlKomunikat("Sukces")
-</panel_attributes>
-    <additional_attributes/>
-  </element>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLObject</id>
     <coordinates>
-      <x>240</x>
-      <y>510</y>
-      <w>120</w>
-      <h>40</h>
+      <x>342</x>
+      <y>504</y>
+      <w>108</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>[poprawne dane]</panel_attributes>
     <additional_attributes/>
@@ -45,10 +16,10 @@ c.&gt;b: wyswietlKomunikat("Sukces")
   <element>
     <id>UMLObject</id>
     <coordinates>
-      <x>240</x>
-      <y>440</y>
-      <w>100</w>
-      <h>40</h>
+      <x>342</x>
+      <y>441</y>
+      <w>90</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>[błędne dane]</panel_attributes>
     <additional_attributes/>
@@ -56,10 +27,10 @@ c.&gt;b: wyswietlKomunikat("Sukces")
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>240</x>
-      <y>410</y>
-      <w>660</w>
-      <h>260</h>
+      <x>342</x>
+      <y>414</y>
+      <w>666</w>
+      <h>234</h>
     </coordinates>
     <panel_attributes>alt
 --
@@ -68,6 +39,242 @@ c.&gt;b: wyswietlKomunikat("Sukces")
 
 
 -.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>198</x>
+      <y>18</y>
+      <w>855</w>
+      <h>711</h>
+    </coordinates>
+    <panel_attributes>Diagram interakcji - Zarejestruj zwrot butelek bezzwrotnych - Igor Nalewajko</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>477</x>
+      <y>162</y>
+      <w>153</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>:FormularzUtylizacji</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>666</x>
+      <y>117</y>
+      <w>135</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>:KontrolerUtylizacji</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>900</x>
+      <y>117</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>:Utylizacja</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>279</x>
+      <y>144</y>
+      <w>18</w>
+      <h>567</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>162</y>
+      <w>207</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+&lt;&lt;create&gt;&gt;
+WybierzOpcjeUtylizacja()</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>180</y>
+      <w>27</w>
+      <h>459</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;490.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>135</y>
+      <w>27</w>
+      <h>585</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>216</y>
+      <w>207</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+PobierzOpakowania()</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>261</y>
+      <w>207</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+listaOpakowan</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>297</y>
+      <w>279</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+wprowadzDane(nazwa, ilosc)</panel_attributes>
+    <additional_attributes>290.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>342</y>
+      <w>279</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+kliknijZatwierdzUtylizacje()</panel_attributes>
+    <additional_attributes>290.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>378</y>
+      <w>207</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+walidujDane(nazwa, ilosc)</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>432</y>
+      <w>207</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+wyswietlKomunikat("Błąd:
+
+Wprowadzono niepoprawne
+dane")</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>504</y>
+      <w>252</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+zatwierdzUtylizacje(nazwa, ilosc)</panel_attributes>
+    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>945</x>
+      <y>135</y>
+      <w>27</w>
+      <h>585</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>540</y>
+      <w>252</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+potwierdzenieZapisu</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>576</y>
+      <w>207</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+wyswietlKomunikat
+
+("Sukces")</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>243</x>
+      <y>54</y>
+      <w>90</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Magazynier</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>540</x>
+      <y>612</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>type=termination</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
