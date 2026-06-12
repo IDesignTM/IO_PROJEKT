@@ -27,12 +27,11 @@
     <id>UMLObject</id>
     <coordinates>
       <x>380</x>
-      <y>30</y>
+      <y>40</y>
       <w>380</w>
-      <h>550</h>
+      <h>540</h>
     </coordinates>
-    <panel_attributes>Diagram czynności
-Zarejestruj utylizację butelek bezzwrotnych
+    <panel_attributes>Zarejestruj utylizację butelek bezzwrotnych
 Igor Nalewajko
 valign=top</panel_attributes>
     <additional_attributes/>
@@ -124,7 +123,7 @@ valign=top</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m2=[błędne dane]</panel_attributes>
-    <additional_attributes>170.0;10.0;200.0;10.0;200.0;170.0;10.0;170.0</additional_attributes>
+    <additional_attributes>110.0;10.0;200.0;10.0;200.0;170.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -170,27 +169,5 @@ m2=[poprawne dane]</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>670</x>
-      <y>220</y>
-      <w>40</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>type=decision</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>640</x>
-      <y>230</y>
-      <w>50</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;30.0;10.0</additional_attributes>
   </element>
 </diagram>
