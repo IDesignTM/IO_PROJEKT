@@ -3,7 +3,7 @@ a) Dla pracownika biura
 1. Przyjmij zamówienie
 2. Edytuj zamówienie
 3. Anuluj zamówienie
-4. Wygeneruj dokument WZ
+4. Wygeneruj potwierdzenie
 5. Sprawdź status zamówienia
 
 b) Dla magazyniera
